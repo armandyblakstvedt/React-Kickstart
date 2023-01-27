@@ -11,7 +11,7 @@ kjennskap til:
 ## Smakebit
 
 React har gode guides på nettsiden deres, anbefales å **lese de**.
-React er bygget opp rundt **komponenter**. En komponent kan feks være forskjellige sider på en nettside, en boks som viser noe informasjon eller en _navigation stack_. Disse komponentene ser ofte nogenlunde slik ut:
+React er bygget opp rundt **komponenter**. 
 <img src="./bilder/1.png">
 Ovenfor ser man en slags "template" til en react-komponent (jeg slang den sammen litt raskt, men det er ish sånn komponentene pleier å se ut). Disse komponentene kan ansees å være analogt med klasser i Java. En komponent har attributter og metoder som en java-klasse, men i tillegg har den også
 **JSX**. Det er i JSX man lager elementene som vises på skjermen, og de ser du i return( JSX ) i screenshottet ovenfor. Nedenfor ser ut et eksempel der jeg putta inn noe kode for å vise
