@@ -11,6 +11,7 @@ kjennskap til:
 ## Smakebit
 
 React har gode guides på nettsiden deres, anbefales å **lese de**.
+React er bygget opp rundt **komponenter**. 
 <img src="./bilder/1.png">
 Ovenfor ser man en slags "template" til en react-komponent (jeg slang den sammen litt raskt, men det er ish sånn komponentene pleier å se ut). Disse komponentene kan ansees å være analogt med klasser i Java. En komponent har attributter og metoder som en java-klasse, men i tillegg har den også
 **JSX**. Det er i JSX man lager elementene som vises på skjermen, og de ser du i return( JSX ) i screenshottet ovenfor. Nedenfor ser ut et eksempel der jeg putta inn noe kode for å vise
@@ -116,6 +117,7 @@ For å skrive javascript i JSX må vi pakke inn all javascript syntax i "{}". Ma
 > () => getData()
 
 for at funksjonen kun skal kjøre når knappen blir trykket på. Ellers vil funksjonen bli kjørt én gang når knappen blir laget av JSX, også skjer det ikke noe mer. Derimot kan vi skrive () => for å definere en anonym, ny funksjon når JSX'en blir laget slik at den kun kjøres når onPress blir aktivert på knappen.
+<<<<<<< HEAD
 
 ## Props
 
@@ -140,3 +142,5 @@ export default function App({ color }) {
 ```
 
 Her bruker App komponenten Boks, og gir den color="blue". Da vil App, som parent, gi property'en blue til Boks componenten, og den vil dermed få fargen blå.
+=======
+>>>>>>> 6ef71a68f6ad7f0af9fcc78f5dedd1d9c7c9069c
