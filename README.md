@@ -117,33 +117,3 @@ For å skrive javascript i JSX må vi pakke inn all javascript syntax i "{}". Ma
 > () => getData()
 
 for at funksjonen kun skal kjøre når knappen blir trykket på. Ellers vil funksjonen bli kjørt én gang når knappen blir laget av JSX, også skjer det ikke noe mer. Derimot kan vi skrive () => for å definere en anonym, ny funksjon når JSX'en blir laget slik at den kun kjøres når onPress blir aktivert på knappen.
-
-## Props
-
-Props er noe en _parent_ komponent kan gi til en _child_. Dette er lettere å vise ved et eksempel:
-
-La oss si du først laget en komponent, Box, som har en farge, som det står "Hei" i.
-
-```
-
-export default function Boks({color}){
-
-  return <View bg={color}>Hei</View>;
-}
-
-```
-
-Her ser vi at komponenten tar inn _{color}_, en property som komponenten blir gitt av en parent. Fargen til boksen varierer altså avhengig av "color"
-
-Så lager vi parent, som vi kaller App:
-
-```
-
-export default function App({color}){
-
-  return <Boks color="blue" />
-}
-
-```
-
-Her bruker App komponenten Boks, og gir den color="blue". Da vil App, som parent, gi property'en blue til Boks componenten, og den vil dermed få fargen blå.
