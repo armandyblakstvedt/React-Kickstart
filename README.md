@@ -53,7 +53,7 @@ Dersom vi ønsker å ha en "default-value" for en attributt, så velges dette he
 
 Metodene brukes på samme måte som ellers i vanlige klasser. Det eneste snodige her er kanskje hvordan man skriver funksjonene, da konvensjonen er å skrive såkalte arrow-functions. De ser slik ut:
 
-```
+```javascript
 const minCamelCaseFunksjon = () => {
     // Gjør noe
 }
@@ -90,26 +90,26 @@ Dette er det som er i
 
 av en functional component. Her kommer alt som skal vises på skjermen i form av enten Native elements (mobil) eller browser elements (web). Dette vil foreksempel vise en horisontal rekke av knapper:
 
-```
+```javascript
 return (
-    <HStack>
-        <Button />
-        <Button />
-        <Button />
-    </HStack>
-)
+  <HStack>
+    <Button />
+    <Button />
+    <Button />
+  </HStack>
+);
 ```
 
 Man vil gjerne at disse elementene skal kommunisere med logikken i komponenten. Dette gjøres for eksempel ved at Button har en "onPress" property. Dvs at Button kan kalle på en metode/funksjon i logikk-delen av komponenten. Hvis vi har en metode som heter "getData()" som vi vil kalle med en av knappene, kan de se slik ut:
 
-```
+```javascript
 return (
-    <HStack>
-        <Button onPress={() => getData()} />
-        <Button />
-        <Button />
-    </HStack>
-)
+  <HStack>
+    <Button onPress={() => getData()} />
+    <Button />
+    <Button />
+  </HStack>
+);
 ```
 
 For å skrive javascript i JSX må vi pakke inn all javascript syntax i "{}". Man må også skrive
@@ -124,26 +124,20 @@ Props er noe en _parent_ komponent kan gi til en _child_. Dette er lettere å vi
 
 La oss si du først laget en komponent, Box, som har en farge, som det står "Hei" i.
 
-```
-
-export default function Boks({color}){
-
+```javascript
+export default function Boks({ color }) {
   return <View bg={color}>Hei</View>;
 }
-
 ```
 
 Her ser vi at komponenten tar inn _{color}_, en property som komponenten blir gitt av en parent. Fargen til boksen varierer altså avhengig av "color"
 
 Så lager vi parent, som vi kaller App:
 
-```
-
-export default function App({color}){
-
-  return <Boks color="blue" />
+```javascript
+export default function App({ color }) {
+  return <Boks color="blue" />;
 }
-
 ```
 
 Her bruker App komponenten Boks, og gir den color="blue". Da vil App, som parent, gi property'en blue til Boks componenten, og den vil dermed få fargen blå.
