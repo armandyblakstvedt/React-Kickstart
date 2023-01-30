@@ -141,6 +141,3 @@ export default function App({ color }) {
 }
 ```
 
-Her bruker App komponenten Boks, og gir den color="blue". Da vil App, som parent, gi property'en blue til Boks componenten, og den vil dermed få fargen blå.
-=======
->>>>>>> 6ef71a68f6ad7f0af9fcc78f5dedd1d9c7c9069c
