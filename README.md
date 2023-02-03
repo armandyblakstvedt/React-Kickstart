@@ -8,10 +8,12 @@ kjennskap til:
 - HTML/CSS
 - Javascript
 
+## Hva er HTML/CSS
+
 ## Smakebit
 
 React har gode guides på nettsiden deres, anbefales å **lese de**.
-React er bygget opp rundt **komponenter**. 
+React er bygget opp rundt **komponenter**.
 <img src="./bilder/1.png">
 Ovenfor ser man en slags "template" til en react-komponent (jeg slang den sammen litt raskt, men det er ish sånn komponentene pleier å se ut). Disse komponentene kan ansees å være analogt med klasser i Java. En komponent har attributter og metoder som en java-klasse, men i tillegg har den også
 **JSX**. Det er i JSX man lager elementene som vises på skjermen, og de ser du i return( JSX ) i screenshottet ovenfor. Nedenfor ser ut et eksempel der jeg putta inn noe kode for å vise
@@ -141,3 +143,9 @@ export default function App({ color }) {
 }
 ```
 
+<<<<<<< Updated upstream
+=======
+# Her bruker App komponenten Boks, og gir den color="blue". Da vil App, som parent, gi property'en blue til Boks componenten, og den vil dermed få fargen blå.
+
+> > > > > > > 6ef71a68f6ad7f0af9fcc78f5dedd1d9c7c9069c
+>>>>>>> Stashed changes
